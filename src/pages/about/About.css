@@ -1,0 +1,110 @@
+.text_container {
+        display: flex;
+        border-bottom-color: black;
+        border-bottom-width: 2px;
+        border-top-width:0px ;
+        border-top-color: none;
+        padding-bottom: 45px;
+}
+
+.heading_medium {
+    letter-spacing: -2px;
+    font-family: Inter, sans-serif;
+    font-size: 6vw;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+.left_side_text{
+    padding: 15px;
+    margin-block: 25px;
+    width: 60%;
+    height: 90vh;
+    border-right-color: rgb(0, 0, 0);
+    border-right-width: 2px;
+}
+
+.about_text {
+    font-weight: 600;
+    font-size: 25px;
+    font-family: Inter, sans-serif;
+    line-height: 120%;
+    letter-spacing: -0.5;
+}
+
+.social_body{
+    background-color: black;
+    width: 48px;
+    height: 48px;
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.right_side_text{
+    width: 40%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:start;
+    padding: 15px;
+    padding-inline: 40px;
+    margin-block: 25px;
+
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .left_side_text, .right_side_text {
+        height: 55vh;
+      
+    }
+}
+@media screen and (max-width: 768px) {
+    .text_container {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding-block: 0px;
+    }
+
+    .left_side_text, .right_side_text {
+        width: 100%;
+        height: auto;
+        border-right: none;
+        margin-block: 0px;
+        padding: 10px;
+        /* margin-block: 15px; */
+    }
+
+    .heading_medium {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 20px;
+    }
+
+    .right_side_text {
+        padding-inline: 10px;
+        padding-bottom: 0px;
+        margin-block: 0px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .social_container {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10px;
+        padding-left: 4px;
+    }
+
+    .social_body {
+        width: 30px;
+        height: 30px;
+    }
+}

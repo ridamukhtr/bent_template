@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.heading_style_h3 {
+    letter-spacing: -.5px;
+    font-family: Inter, sans-serif;
+    font-size: 2vw;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.heading_style_h2{
+    letter-spacing: -0.5px;
+    font-family: Inter, sans-serif;
+    font-size: 3vw;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.line{
+    height: 43vh;
+}
+
+.horizontal-line {
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.heading_xlarge{
+    letter-spacing: -7px;
+    font-family: Inter, sans-serif;
+    font-size: 10vw;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .heading_style_h3 {
+        font-size: 25px;
+    }
+
+    .heading_style_h2{
+        letter-spacing: 1px;
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    .heading_xlarge{
+        letter-spacing: -3px;
+        font-size: 10vw;
+        font-weight: 600;
+        line-height: 100%;
+    }
+}

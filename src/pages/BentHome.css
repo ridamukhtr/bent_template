@@ -1,0 +1,115 @@
+.header_container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.button_container {
+    background-color: black;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn_Body {
+    color: #ffff;
+    font-family: Inter, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn_container {
+    width: 110px;
+    height: 60px;
+    border-radius: 45px;
+    cursor: pointer;
+
+}
+
+.main_title {
+    letter-spacing: -3px;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 100%;
+    font-family: Inter, sans-serif;
+    font-size: 10vw;
+}
+
+.home_hero {
+    padding-block: 15px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.img_body {
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.hero_sec {
+    padding-inline: 5rem;
+}
+
+.img_body {
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.imgContainer {
+    background-image: url('../assets/images/camera.png');
+    width: 100%;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera2 {
+    background-image: url('../assets/images/camera2.png');
+}
+
+.noise1 {
+    background-image: url('../assets/images/noise1.png');
+}
+
+
+
+@media only screen and (min-width: 780px) and (max-width: 1023px) {}
+
+@media only screen and (min-width: 320px) and (max-width: 779px) {
+    .main_title {
+        letter-spacing: -2px;
+        font-weight: 500;
+    }
+
+    .img_body {
+        height: 70vh
+    }
+
+    .hero_sec {
+        padding-inline: 3rem;
+    }
+
+    .imgContainer {
+        height: 50vh;
+    }
+
+}

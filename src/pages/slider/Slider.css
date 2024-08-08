@@ -1,0 +1,20 @@
+.slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    white-space: nowrap;
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .item {
+    padding: 0 10px;
+    font-size: 11vw;
+    font-weight: 600;
+    font-family: Inter, sans-serif;
+  }

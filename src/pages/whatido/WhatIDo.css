@@ -1,0 +1,141 @@
+.do_container {
+    display: flex;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-top-color: none;
+    padding-bottom: 45px;
+    flex-wrap: wrap;
+}
+
+.parent1 {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-width: 2px;
+}
+
+.left_side {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    margin-block: 25px;
+    width: 30%;
+    height: 90vh;
+    border-right-color: black;
+    border-right-width: 2px;
+}
+
+.right_side {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 90vh;
+    padding-inline: 15px;
+    margin-block: 12px;
+   
+}
+
+.child1_container {
+    margin-block: 15px;
+    width: 50%;
+    padding-inline: 25px;
+    height: 35vh;
+    border-right-color: black;
+    border-right-width: 2px;
+
+
+}
+
+.child2_container {
+    width: 50%;
+    padding-inline: 25px;
+    height: 35vh;
+    margin-block: 15px;
+
+}
+
+
+@media screen and (min-width: 769px)  {
+    .do_container {
+        padding-bottom: 0px;
+    }
+
+    .right_side {
+        height: auto;
+    }
+
+    .left_side {
+        height: auto;
+    }
+
+    .child1_container, .child2_container {
+        height: auto;
+    }
+    .parent1 {
+        width: 100%;
+        height: auto;
+        margin-bottom:  0px;
+        padding-bottom: 0px;
+    }
+
+    .parent2{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media screen and (min-width: 340px) and (max-width: 768px) {
+    .do_container {
+        padding-bottom: 0px;
+        display: block;
+        border-bottom-width: 0px;
+        height: auto;
+    }
+
+    .left_side {
+        /* padding: 10px; */
+        margin-block: 0px;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        border-right-width: 0px;
+    }
+
+    .parent1 {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom:  0px;
+        padding-bottom: 0px;
+        border-bottom-width: 0px;
+    }
+
+    .right_side {
+        display: block;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding-inline: 15px;
+        margin-block: 12px;
+    }
+
+    .child1_container, .child2_container {
+        width: 100%;
+        margin-block: 15px;
+        padding: 5px;
+        height: auto;
+        border-right-width: 0px;
+        border-bottom-color: black;
+        border-bottom-width: 1.5px;
+    }
+    .parent2{
+        height: auto;
+        display: block;
+    }
+
+    
+}
